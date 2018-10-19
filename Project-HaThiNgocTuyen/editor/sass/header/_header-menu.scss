@@ -1,0 +1,16 @@
+ul.header-menu{
+    display: flex;
+    padding: 24px 0;
+    
+    li{
+        text-align: center;
+        padding: 0 40px;
+        border-right: 1px solid $color-border;
+        &:first-child{
+            border-left: 1px solid $color-border;
+        }
+        &:last-child{
+            padding: 0 13px;
+        }
+    }
+}

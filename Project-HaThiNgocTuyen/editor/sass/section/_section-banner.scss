@@ -1,0 +1,10 @@
+.image-banner{
+    background: url("../images/banner-section.png") no-repeat center;
+    height: 420px;
+    @extend %flex-center;
+    .text-banner {
+        font-size: 30px;
+        padding: 17px 5px;
+        @extend %border-white;
+    }
+}

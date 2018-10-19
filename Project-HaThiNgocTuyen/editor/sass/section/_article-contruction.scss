@@ -1,0 +1,67 @@
+.header-article{
+    >img {
+        display: block;
+        margin: 0 auto;
+        &:first-child{
+            @include setPaddingTB(60px, 18px);
+        }
+    }
+}
+
+ul.article-content{
+    text-align: center;
+    @include setPaddingTB(40px, 65px);
+    >li{
+        line-height: 22.4px;
+        @include setFont(16px, $color-grey);
+    }
+}
+.home{
+    background: url(../images/home.png) no-repeat;
+    @extend %bg-url;
+}
+.home-window{
+    background: url(../images/home-window.png) no-repeat;
+    @extend %bg-url;
+
+}
+.building{
+    background: url(../images/building.png) no-repeat;
+    @extend %bg-url;
+}
+
+.article-home {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 75px;
+    @extend %hover;
+    .img-block {
+        width: 220px;
+        @include setPaddingLR(54.5px,54.5px);
+        .construction-content{
+            text-align: center;
+        }
+    }
+    li:first-child{
+        @include setPaddingLR(36px,54.5px);
+    }
+
+    li:last-child{
+        @include setPaddingLR(54.5px,36px);
+    }
+    
+}
+.button-article{
+    padding: 9px 23px 8px 10px;
+    background-color: $background-blue;
+    @include setFont(10px, $color-white);
+    text-transform: uppercase;
+    position: absolute;
+    left: calc(50% - 43px);
+    bottom: calc(50% - 20vh + 15px);
+    .fa-play {
+        padding-right: 13px;
+        font-size: 9px;
+    }
+
+}

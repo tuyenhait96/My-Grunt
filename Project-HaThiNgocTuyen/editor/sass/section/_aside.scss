@@ -1,0 +1,31 @@
+.d-flex {
+    display: flex;
+    .aside{
+        width: 443px;   
+    }
+    .aside-left {
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+    }
+    .aside-right{
+        @extend %block;
+        padding-left: 67px;
+        > .aside-img {
+            @include setPaddingTB(80px, 40px);
+            &>img:last-child{
+                margin-top: 10px;
+            }
+        }
+        > span {
+            @include setFont(16px, $color-grey);
+            line-height: 22.4px;
+        }
+        >a > img  {
+            @include setPaddingTB(35px, 75px);
+        }
+    }
+}
+

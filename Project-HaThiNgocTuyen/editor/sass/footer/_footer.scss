@@ -1,0 +1,47 @@
+section{
+    background: url("../images/banner-footer.png") no-repeat center;
+    height: 358px;
+}
+
+.footer{
+    @extend %flex-center;
+    flex-direction: column;
+    position: relative;
+    > img {
+        position: fixed;
+        bottom: 250px;
+        right: 50px;
+        cursor: pointer;
+    }
+    .text-footer {
+        font-size: 24px;
+        padding: 17px 67px;
+        @extend %border-white;
+        margin-top: 60px;
+    }
+    .text-white {
+        text-align: center;
+        @include setFont(16px, $color-white);
+        line-height: 22.4px;
+        margin-top: 30px;
+    }
+    > strong {
+        @include setFont(16px, $color-yellow);
+        line-height: 22.4px;
+        margin-bottom: 40px;
+    }
+    >.header-right {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        .text-phone {
+            color: $color-white;
+        }
+    }
+    
+}
+
+.cover-phone {
+    height: 32px;
+}
+
