@@ -19,13 +19,18 @@
         include "html-elements/header-menu.html"
     </header>
 <!-- HEADER: END -->
+
 <!-- SECTION: START --> 
-<main>
-    <!-- BANNER: START -->
-    include "html-elements/section-banner.html"
-    include "html-elements/section-content.html"
+<main id="main-banner">
+    <!-- BANNER -->
+    include "html-elements/main-banner.html"
 </main>
 <!-- SECTION: END -->
+
+<section>
+    include "html-elements/content-footer.html"
+</section>
+
 <!--  FOOTER-TEXT: START --> 
     <section>
         include "html-elements/footer.html"
@@ -33,8 +38,8 @@
 <!-- FOOTER-TEXT: END --> 
 
 <!-- FOOTER-MENU: START --> 
-    <footer>
-    <!-- MENU: START -->
+    <footer id="content-footer">
+    <!-- MENU-->
         include "html-elements/footer-menu.html"
     </footer>
     <div class="footer-copy">

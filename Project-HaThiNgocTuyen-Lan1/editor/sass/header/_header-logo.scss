@@ -1,0 +1,42 @@
+// ------ HEADER-MENU: START ------ 
+div.header {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    div.header-right {
+        padding: 18px 0;
+        display: flex;
+        align-items: center;
+        @media (max-width:768px) {
+            display: none;
+        }
+    } 
+    
+}
+div.group-phone{
+    padding-right: 22px;          
+    span.text-phone{
+        @include setFont(12px, $color-black);
+    }
+}
+a.button-yellow-header{
+    @include setButton(15px 20px 15px 18px, $background-button, bold, none);
+    @include setFont(14px, $color-button);
+}
+
+a.button-yellow-footer{
+    @include setButton(17px 21px, $background-button, bold, none);
+    @include setFont(16px, $color-button);
+}
+
+.toggle {
+    padding-right: 15px;
+    display: none;
+    cursor: pointer;
+    text-align: right;
+    @media(max-width: 768px)  {
+        display: block;
+    }
+}
+
+// ------ HEADER-MENU: START ------ 

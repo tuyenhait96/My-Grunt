@@ -8,7 +8,7 @@
   display: block;
 }
 
-.footer-menu, .footer, .image-banner {
+.footer-menu, .footer, main .image-banner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,8 +25,8 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-  ul.header-menu {
+@media screen and (max-width: 768px) {
+  #header ul.header-menu {
     flex-direction: column;
     display: none;
     position: absolute;
@@ -49,6 +49,8 @@
   #image-banner {
     background: url("../images/banner-section-sp.png") no-repeat center bottom;
     background-size: cover;
+    padding: 56px 25px 78px 25px;
+    height: 210px;
   }
   #image-banner .text-banner {
     font-size: 19px;
@@ -58,20 +60,20 @@
 
   #content {
     flex-direction: column;
-    margin: 25px 18px;
+    margin: 25px 17.5px 30.5px 16.5px;
     position: relative;
   }
   #content .content-left {
     border-right: 0;
-    margin: 20px 15px 17px 15px;
+    margin: 20px 17px 0 17px;
     border-bottom: 2px dotted #cccccc;
   }
   #content .content-right {
-    padding: 0 15px 71px 19px;
+    padding: 0 15px 81px 19px;
   }
   #content .content-right li {
     border-bottom: 2px dotted #cccccc;
-    padding-bottom: 12px;
+    padding-bottom: 11px;
     font-size: 14px;
   }
   #content .content-right span {
@@ -80,7 +82,7 @@
   }
   #content .button-content {
     position: absolute;
-    bottom: 15px;
+    bottom: 23px;
     left: calc(50% - 55px);
     padding: 9px 30px 9px 9px;
     font-size: 13px;
@@ -91,6 +93,16 @@
 
   ul#article-content > li {
     font-size: 14px;
+  }
+
+  #header-article > img:first-child {
+    padding-top: 30px;
+    padding-bottom: 7px;
+  }
+
+  ul#article-content {
+    padding-top: 21px;
+    padding-bottom: 25px;
   }
 
   #article-home li:first-child {
@@ -132,6 +144,10 @@
     padding: 5px 12px 4px 5px;
   }
 
+  aside {
+    padding: 0 23px;
+  }
+
   .d-flex {
     flex-direction: column-reverse;
     align-items: center;
@@ -140,6 +156,7 @@
   .d-flex #aside {
     width: 100%;
     background-position: center;
+    justify-content: flex-start;
   }
   .d-flex .aside-right img {
     margin: 0 auto;
@@ -147,6 +164,22 @@
   .d-flex #aside-right {
     padding-left: 0;
     width: 100%;
+  }
+  .d-flex #aside-right .aside-img {
+    padding-top: 31px;
+    padding-bottom: 22.5px;
+  }
+  .d-flex #aside-right > span {
+    font-size: 14px;
+  }
+  .d-flex #aside-right > a > img {
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+
+  #section-footer {
+    background: url("../images/banner-footer-sp.png") no-repeat right;
+    background-size: cover;
   }
 
   #footer > img {
@@ -172,16 +205,17 @@
   #footer .header-right {
     flex-direction: column;
   }
-  #footer .group-phone {
+  #footer .header-right .group-phone {
     text-align: center;
   }
-  #footer .text-phone {
+  #footer .header-right .group-phone .text-phone {
     font-size: 10px;
   }
-  #footer .button-yellow {
+  #footer .header-right .button-yellow-footer {
     margin-top: 20px;
+    text-align: center;
   }
-  #footer .text-button {
+  #footer .header-right .button-yellow-footer .text-button {
     font-size: 13px;
   }
 }
@@ -275,6 +309,15 @@ header {
 .image-banner .text-banner {
   font-size: 30px;
   padding: 17px 5px;
+}
+
+#main-banner .image-banner {
+  background: url("../images/main-banner.png") no-repeat center;
+  height: 160px;
+}
+#main-banner .image-banner .text-banner {
+  font-size: 28px;
+  border: 0;
 }
 
 .content {
