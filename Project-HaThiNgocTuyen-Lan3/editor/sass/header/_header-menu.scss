@@ -1,0 +1,17 @@
+ul.header-menu{
+    display: flex;
+    padding: 21px 0;
+    
+    li{
+        text-align: center;
+        padding: 4px 40px;
+        border-right: 1px solid $color-border;
+        line-height: 1.1;
+        &:first-child{
+            border-left: 1px solid $color-border;
+        }
+        &:last-child{
+            padding: 0 13px;
+        }
+    }
+}

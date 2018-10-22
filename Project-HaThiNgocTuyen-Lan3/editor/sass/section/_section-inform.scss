@@ -1,0 +1,15 @@
+#section-inform{
+    background: $background-grey;
+    text-align: center;
+    .title{
+        @include setPaddingTB(68px, 44px);
+        line-height: 1;
+        p{
+            @include setFont(26px, $color-bl);
+        }
+        .cover-img{
+            line-height: 0;
+            margin-top: 20px;
+        }
+    }
+}

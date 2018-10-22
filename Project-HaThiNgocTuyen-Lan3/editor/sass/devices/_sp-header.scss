@@ -1,0 +1,32 @@
+#header {
+    padding-right: 9.5px;
+    div.header-left{
+        padding-left: 19.5px;
+    }
+    div.header-right {
+        display: none;
+    }
+    .toggle{
+        display: block;
+        padding-right: 0;
+    }
+}
+
+#header ul.header-menu {
+    flex-direction: column;
+    display: none;       
+    position: absolute;
+    background-color: $background-header;
+}
+.container{
+    width: 100% !important ;
+}
+//  ---- HEADER ----
+.active {
+    display: block !important;
+}
+.header img{
+    max-width: 100%;
+    width: 50%;
+}
+

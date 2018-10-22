@@ -1,0 +1,83 @@
+@media screen and (max-width: 768px){
+
+    #d-md-block{
+        display: block !important;
+    }    
+    .d-none-sm{
+        display: none !important;
+    }
+
+//------------------- HEADER -------------------
+    @import "sp-header";
+
+//------------------- SECTION: BANNER -------------------
+    @import "sp-section-banner";
+
+//------------------- SECTION: CONTENT -------------------
+    @import "sp-section-content";
+
+//------------------- ARTICLE -------------------
+    ul#article-content {
+        @include setPaddingTB(20.5px, 24.5px);
+        > li{
+            font-size: 14px;
+        }
+    }
+    #header-article > img
+    {
+        &:first-child{
+            @include setPaddingTB(30px, 7px);
+        }
+        &:nth-child(3) {
+            @include setPaddingTB(31.5px, 8.5px);
+        }
+    }
+
+    #article-home {
+            li:first-child{
+                @include setPaddingLR(15px,10px);
+            }
+            li:last-child{
+                padding-right: 15px;
+            }
+        
+        .img-block {
+            @include setPaddingLR(10px,10px);
+        }
+    }
+    .article-home{
+        .construction-content{
+            height: 224px;
+        }
+        
+        img{
+            max-width: 50%;
+        }
+        .button-article{
+            display: none;
+        }
+    }
+    #home, #home-window, #building{
+        background-size: contain !important;
+        width: 110px;
+        height: 113px;
+
+    }
+    #home{
+        background: url(../images/home-sp.png) no-repeat;
+    }
+    #home-window{
+        background: url(../images/home-window-sp.png) no-repeat;
+    }
+    #building{
+        background: url(../images/building-sp.png) no-repeat;
+    }
+    .button-article{
+        padding: 5px 12px 4px 5px;
+    }
+//------------------- ASIDE -------------------
+    @import "sp-aside";
+
+//------------------- FOOTER -------------------
+    @import "sp-footer";
+}

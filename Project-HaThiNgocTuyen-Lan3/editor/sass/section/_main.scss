@@ -1,0 +1,12 @@
+@import "section-banner";
+@import "section-content";
+@import "article-contruction";
+@import "aside";
+@import "section-inform";
+
+article {
+    background-color: $background-grey;
+    height: auto;
+}
+
+
