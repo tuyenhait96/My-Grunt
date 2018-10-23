@@ -1,0 +1,23 @@
+.main-menu{
+    display: none;
+}
+
+#main-table{
+    padding: 0 15px 37px 15px;
+    #cover-bottom >p{
+        font-size: 14px;
+    }
+
+    #title{
+        @include setPaddingTB(28.6px , 21.5px);
+        p{
+            font-size: 18px;
+        }
+        #cover-img{
+            margin-top: 13px;
+            img{
+                margin: 0 auto;
+            }
+        }
+    }
+}
